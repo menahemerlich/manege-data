@@ -10,6 +10,7 @@ button:hover {
   border: 3px solid gray;
   background-color: rgb(61, 50, 50);
   color: white;
+  transform: scale(1.2);
 }
 
 button:active {
