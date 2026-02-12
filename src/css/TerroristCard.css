@@ -1,4 +1,29 @@
-#card{
+#card {
     display: flex;
     border: 2px solid;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(247, 230, 210);
+    border: none;
+    box-shadow: 5px 5px 5px gray;
+    align-items: center;
+    border-left: 7px solid rgb(19, 100, 19);
+}
+
+#card:hover {
+    border-left: 7px solid red;
+    transform: scale(1.01);
+    background-color: gray;
+
+}
+
+#card>* {
+    padding: 20px;
+    border-left: 1px solid gray;
+
+}
+
+#card img {
+    width: 100px;
+    height: 100px;
 }

@@ -1,0 +1,39 @@
+button {
+  min-width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  margin: 5px;
+}
+
+button:hover {
+  border: 3px solid gray;
+  background-color: rgb(61, 50, 50);
+  color: white;
+}
+
+button:active {
+  background-color: brown;
+}
+
+#root>* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px;
+}
+
+.buttonSearch {
+  display: flex;
+}
+
+input {
+  margin: 1em;
+  height: 3em;
+  background-color: azure;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px gray;
+  padding: 5px;
+
+}
+#searchInput{
+  display: flex;
+}

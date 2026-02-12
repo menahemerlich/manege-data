@@ -13,13 +13,13 @@ function TerroristCard(props) {
     }
     checkImage()
     return (
-        <div>
+        <div id='card'>
+            <img src={image} alt="" />
             <h1>{props.details.name}</h1>
             <h2>{props.details.organization}</h2>
             <h3>{props.details.attacksCount}</h3>
-            <p>{props.details.status}</p>
+            <p id='status'>{props.details.status}</p>
             <p>{props.details.relationToIsraelSummary}</p>
-            <img src={image} alt="" />
         </div>
     )
 }

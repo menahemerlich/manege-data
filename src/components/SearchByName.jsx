@@ -2,23 +2,16 @@ import React, { useState } from 'react'
 
 function SearchByName(props) {
     const [name, setName] = useState("");
-    function checkName(name, data){
-        // console.log(data);
-        console.log(name);
-        
-        if (name === ''){
-            console.log('empty');
-            
+    function checkName(name, data) {
+        if (name === '') {
             return data
         }
         return data.filter((person) => {
-                                if (person.name === name) {
-                                    return person
-                                }
-                            })
-        
+            if (person.name === name) {
+                return person
+            }
+        })
     }
-    // console.log(checkName(name, props.data));
     return (
         <>
             <form>
@@ -27,10 +20,11 @@ function SearchByName(props) {
                     value={name}
                     placeholder='Search by name...'
                     onChange={(e) => {
-                        setName(e.target.value)
+                        const newName = e.target.value;
+                        setName(newName);
                         props.setData(
-                            checkName(name, props.data)
-                        )
+                            checkName(newName, props.data)
+                        );
                     }}
                 />
             </form>
@@ -39,4 +33,5 @@ function SearchByName(props) {
 }
 
 export default SearchByName
+
 
