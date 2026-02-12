@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ButtonSearch1(props) {
+function MostDangerous(props) {
     const attacksCountArr = []
     for (const element of props.data) {
         attacksCountArr.push(element.attacksCount)
@@ -24,7 +24,7 @@ function ButtonSearch1(props) {
     )
 }
 
-export default ButtonSearch1
+export default MostDangerous
 
 
 

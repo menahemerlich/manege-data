@@ -12,8 +12,9 @@
 
 #card:hover {
     border-left: 7px solid red;
-    transform: scale(1.01);
-    background-color: gray;
+    transform: scale(1.01) translateY(-3px);
+    background-color: rgb(219, 217, 108);
+    opacity: 0.8;
 
 }
 

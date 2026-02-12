@@ -6,6 +6,7 @@ function App() {
   
   return (
     <>
+    <h1>Threat Actor Database</h1>
       <ShowTerrorists/>
     </>
   )

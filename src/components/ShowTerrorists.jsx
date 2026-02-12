@@ -5,7 +5,7 @@ import SearchByName from './SearchByName';
 import Reset from './Reset';
 import SearchByNumber from './SearchByNumber';
 import ButtonSearch from './ButtonSearch';
-import ButtonSearch1 from './MostDangerous';
+import MostDangerous from './MostDangerous';
 
 function ShowTerrorists() {
     const [terrorists, setData] = useState(data)
@@ -16,7 +16,7 @@ function ShowTerrorists() {
                 <SearchByName data={data} setData={setData} />
                 <SearchByNumber data={data} setData={setData} />
             </div>
-            <ButtonSearch1 data={data} setData={setData} />
+                <MostDangerous data={data} setData={setData} />
             <div className='buttonSearch'>
                 {statusOptions.map((status, index) =>
                     <div key={index} >
